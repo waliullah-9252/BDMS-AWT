@@ -405,4 +405,3 @@ public class BloodBankManagementSystem extends Frame {
         new BloodBankManagementSystem();
     }
 }
-
