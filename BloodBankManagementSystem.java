@@ -75,11 +75,11 @@ class BloodBank {
     }
 }
 
-public class BloodBankManagementSystemNew extends Frame {
+public class BloodBankManagementSystem extends Frame {
     private BloodBank bloodBank;
     private User currentUser;
     
-    public BloodBankManagementSystemNew() {
+    public BloodBankManagementSystem() {
         bloodBank = new BloodBank();
         currentUser = null;
 
@@ -193,6 +193,14 @@ public class BloodBankManagementSystemNew extends Frame {
         d.add(passwordField);
         d.add(createButton);
         d.setSize(300, 200);
+
+        // Window close event
+        d.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                d.dispose();
+            }
+        });
+
         d.setVisible(true);
     }
 
@@ -240,6 +248,14 @@ public class BloodBankManagementSystemNew extends Frame {
         d.add(passwordField);
         d.add(loginButton);
         d.setSize(300, 200);
+
+        // Window close event
+        d.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                d.dispose();
+            }
+        });
+
         d.setVisible(true);
     }
 
@@ -274,6 +290,14 @@ public class BloodBankManagementSystemNew extends Frame {
         d.add(quantityField);
         d.add(donateButton);
         d.setSize(300, 200);
+
+        // Window close event
+        d.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                d.dispose();
+            }
+        });
+
         d.setVisible(true);
     }
 
@@ -306,6 +330,14 @@ public class BloodBankManagementSystemNew extends Frame {
         d.add(quantityField);
         d.add(collectButton);
         d.setSize(300, 200);
+
+        // Window close event
+        d.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                d.dispose();
+            }
+        });
+
         d.setVisible(true);
     }
 
@@ -329,6 +361,14 @@ public class BloodBankManagementSystemNew extends Frame {
         });
         d.add(okButton);
         d.setSize(300, 200);
+
+        // Window close event
+        d.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                d.dispose();
+            }
+        });
+
         d.setVisible(true);
     }
 
@@ -350,11 +390,19 @@ public class BloodBankManagementSystemNew extends Frame {
         });
         d.add(okButton);
         d.setSize(200, 100);
+
+        // Window close event
+        d.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                d.dispose();
+            }
+        });
+
         d.setVisible(true);
     }
 
     public static void main(String[] args) {
-        new BloodBankManagementSystemNew();
+        new BloodBankManagementSystem();
     }
 }
 
